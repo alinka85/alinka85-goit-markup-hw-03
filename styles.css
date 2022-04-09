@@ -18,28 +18,32 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
+header {
+  background-color: var(--title-color);
+}
 .container.navigation {
   display: flex;
   align-items: center;
-  background-color: var(--title-color);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
-.container.profits {
+.container.profit {
   display: flex;
   align-items: center;
-  background-color: var(--title-color);
+}
+.profits {
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: var(--title-color);
 }
 
-.container.works {
+.works {
   background-color: var(--title-color);
   padding-bottom: 94px;
 }
 .mains {
   background-color: #2f303a;
+  padding: 200px 0 200px 0;
 }
 
 .hide {
@@ -48,17 +52,17 @@ body {
 
 .container.main {
   text-align: center;
-  padding: 200px 0 200px 0;
+}
+.abouts {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--projects-color);
 }
 
 .container.about {
-  background-color: var(--projects-color);
   align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
-
-.container.projects {
+.projects {
   background-color: var(--title-color);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -82,6 +86,10 @@ body {
   margin-right: 93px;
 }
 
+.logo-end {
+  margin-bottom: 20px;
+}
+
 .link,
 .link-adress,
 .link-active,
@@ -94,6 +102,9 @@ body {
   font-weight: 500;
 }
 
+.link.tel {
+  color: var(--text-color);
+}
 .link:hover {
   color: var(--link-color);
 }
@@ -118,8 +129,14 @@ nav,
 .links-item:last-child {
   margin-right: 0;
 }
-
+img {
+  display: block;
+}
 .foto-work:last-child {
+  margin-right: 0;
+}
+
+.foto-people:last-child {
   margin-right: 0;
 }
 .button-item:last-child {
@@ -141,7 +158,6 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   padding: 0;
-  margin: 0px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -213,9 +229,12 @@ button {
   font-size: 16px;
   line-height: 1.18;
   color: var(--text-color);
-  margin-bottom: 30px;
 }
 
+.personal {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 footer .logo-stud,
 footer .link-adress {
   color: var(--title-color);
@@ -254,13 +273,17 @@ footer {
   color: var(--title-color);
 }
 
+.title {
+  padding: 20px 24px;
+}
+
 .title-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin: 20px 24px 4px 24px;
   color: var(--main-color);
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .title-discription {
@@ -269,10 +292,9 @@ footer {
   padding-top: 4px;
   color: var(--text-color);
   letter-spacing: 0.03em;
-  margin: 0 24px 20px 24px;
 }
 
-.profits,
+.profits-list,
 .foto,
 .command-list,
 .project-list {
@@ -302,9 +324,8 @@ footer {
   text-align: center;
   background-color: var(--title-color);
 }
-
-.about-image {
-  margin-bottom: 30px;
+.contacts-item {
+  margin-bottom: 9px;
 }
 
 .project-list {
